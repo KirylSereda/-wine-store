@@ -6,13 +6,21 @@ $c_gold:#bba63d;
 $c_beige: #E6E3C4;
 $c_white: #ffffff;
 
+@mixin fontz ($font-family,$font-size) {
+	font-family: $font-family;
+	font-size: $font-size
+}
+@mixin flex ($display,$justify-content) {
+	display: $display;
+	justify-content: $justify-content;
+	
+}
 //General settings
 
 body {
 	margin: 0;
-	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
-	color: $c_white;
+		color: $c_white;
+		@include fontz(sans-serif, 14px);
 		h1,h2,h3,h4,h6,p {
 		margin: 0;
 	}
@@ -33,8 +41,7 @@ body {
 		color: $c_white;
 		margin: 0 auto;
 		.header-address {
-			display: flex;
-			justify-content: space-between;
+			@include flex (flex,space-between);
 			padding-top: 20px;
 		}
 		.navbar {
@@ -46,7 +53,7 @@ body {
 				border: 1px solid $c_white;
 				cursor: pointer;
 				text-decoration: none;
-				font-family: Montserrat;
+				@include fontz(Montserrat, 14px);
 				color: $c_white;
 				text-align: center;
 				padding: 15px;
@@ -63,8 +70,7 @@ body {
 			}
 		}
 		.content-buttons-block {
-			display: flex;
-			justify-content: center;
+			@include flex (flex,center);
 			.header-button {
 				outline: none;
 				background: $c_dark-gold;
@@ -73,7 +79,7 @@ body {
 				border: none;
 				text-transform: uppercase;
 				color: $c_white;
-				font-size: 16px;
+				@include fontz(Montserrat, 16px);
 				cursor: pointer;
 				&:hover {
 					background-color: $c_gold;
@@ -89,8 +95,7 @@ body {
 .intro {
 	background-color: $c_dull-gray;
 	height: 900px;
-	display: flex;
-	justify-content: center;
+	@include flex (flex,center);
 	align-items: center;
 	&-inner {
 		width: 1110px;
@@ -101,15 +106,13 @@ body {
 		align-items: center;
 		h1 {
 			padding-top: 67px;
-			font-size: 36px;
-			font-family: Playfair;
+			@include fontz(Playfair, 36px);
 			text-align: center;
 		}
 		.inner-text {
 			padding: 40px 186px;
 			text-align: center;
-			font-family: Montserrat;
-			font-size: 16px;
+			@include fontz(Montserrat, 16px);
 			line-height: 1.5;
 		}
 	}
@@ -119,26 +122,20 @@ body {
 
 .new-collections-container {
 	background-color: $c_beige;
-	height: 878px;
 	padding: 80px 405px;
 	color: $c_black;
 	.new-collections {
 		width: 1110px;
-		height: 758px;
-		display: flex;
-		justify-content: center;
+		@include flex (flex,center);
 		border-top: 2px solid $c_dark-gold;
 		border-bottom: 2px solid $c_dark-gold;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding: 60px 0px;
 		.portrait {
 			.novelty {
-				font-size: 16px;
-				font-family: Montserrat;
+				@include fontz(Montserrat, 16px);
 			}
 			.marseille-harvest {
-				font-size: 36px;
-				font-family: Playfair Display;
+				@include fontz(Playfair, 36px);
 				padding: 30px 0px;
 				&::after {
 					content: '';
@@ -150,8 +147,7 @@ body {
 				}
 			}
 			.novelty-text {
-				font-size: 14px;
-				font-family: Montserrat;
+				@include fontz(Montserrat, 14px);
 				line-height: 1.5;
 				padding: 0px 125px 35px 0px;
 			}
@@ -167,20 +163,17 @@ body {
 					.vintage-year {
 						padding: 0 24px;
 						align-self: center;
-						font-size: 14px;
-						font-family: Montserrat
+						@include fontz(Montserrat, 14px);
 					}
 					.vintage-topic-text {
 						padding: 10px 0 15px 30px;
 						border-left: 2px solid $c_black;
 						line-height: 1.7;
 						.vintage-topic {
-							font-size: 18px;
-							font-family: Playfair Display;
+							@include fontz(Playfair, 18px);
 						}
 						.vintage-text {
-							font-size: 14px;
-							font-family: Montserrat;
+							@include fontz(Montserrat, 14px);
 						}
 					}
 					&:last-child {
@@ -189,10 +182,9 @@ body {
 				}
 			}
 			.text-after-table {
-				font-size: 14px;
-				font-family: Montserrat;
+				@include fontz(Montserrat, 14px);
 				line-height: 1.7;
-				padding: 30px 125px 30px 0px;
+				padding: 30px 120px 30px 0px;
 			}
 			.more-details-btn {
 				width: 254px;
@@ -215,6 +207,7 @@ body {
 			.img-wine-item {
 				border-right: 30px solid $c_beige;
 				border-top: 30px solid $c_beige;
+				
 			}
 		}	
 	}
@@ -224,8 +217,7 @@ body {
 
 .registration {
 	background-color: $c_dull-gray;
-	display: flex;
-	justify-content: center;
+	@include flex (flex,center);
 	align-items: center;
 	position: relative;
 	height: 767px;
@@ -237,17 +229,15 @@ body {
 		flex-direction: column;
 		position: relative;
 		.registration-img {
-			display: flex;
-			justify-content: space-between;
-			.top-img-1 {
+			@include flex (flex,space-between);
+				.top-img-1 {
 				margin: -70px 0 0 -30px;
 			}
 			.top-img-2 {
 				background-color: $c_dull-gray;
 				margin-top: -28px;
 				padding: 0px 20px;
-				font-family: Playfair Display;
-				font-size: 36px;
+				@include fontz(Playfair, 36px);
 				&::after {
 					margin-left: 135px;
 					content: '';
@@ -267,18 +257,15 @@ body {
 		padding: 0 285px;
 		.registration-text {
 			margin-top: -70px;
-			font-size: 16px;
-			font-family: Montserrat;
+			@include fontz(Montserrat, 16px);
 			line-height: 1.7;
 			text-align: center;
 		}
 		.record-form {
 			margin-top: 70px;
-			display: flex;
-			justify-content: space-around;
+			@include flex (flex,space-around);
             .form-name-number {
-				font-size: 14px;
-				font-family: Montserrat;
+				@include fontz(Montserrat, 14px);
 				.border-for-form::before {
 					content: '';
 					height: 2px;
@@ -306,9 +293,8 @@ body {
 			background: $c_dull-gray;
 			color: $c_white;
 			cursor: pointer;
-			font-size: 14px;
 			text-transform: uppercase;
-			font-family: Montserrat;
+			@include fontz(Montserrat, 14px);
 			&:hover {
 				background-color: $c_dark-gray;
 				transition: opacity .1s linear;
@@ -320,14 +306,12 @@ body {
 .footer {
 	background-color: $c_dark-gold;
 	height: 220px;
-	display: flex;
-	justify-content: center;
+	@include flex (flex,center);
 	align-items: center;
 	flex-direction: column;
 	.footer-navbar-1 {
 		width: 1110px;
-		font-size: 14px;
-		font-family: Montserrat;
+		@include fontz(Montserrat, 14px);
 		text-transform: uppercase;
 		border-top: 1px solid $c_white;
 		.item-first-navbar {
@@ -341,10 +325,8 @@ body {
 		}
 	}
 	.footer-navbar-2 {
-		display: flex;
-		justify-content: center;
-		font-size: 14px;
-		font-family: Montserrat;
+		@include flex (flex,center);
+		@include fontz(Montserrat, 14px);
 		text-transform: uppercase;
 		border-top: 1px solid $c_white;
 		border-bottom: 1px solid $c_white;

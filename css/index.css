@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
   color: #ffffff;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 body h1, body h2, body h3, body h4, body h6, body p {
   margin: 0;
@@ -38,6 +38,7 @@ body .sectoion-container {
   cursor: pointer;
   text-decoration: none;
   font-family: Montserrat;
+  font-size: 14px;
   color: #ffffff;
   text-align: center;
   padding: 15px;
@@ -64,6 +65,7 @@ body .sectoion-container {
   border: none;
   text-transform: uppercase;
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 16px;
   cursor: pointer;
 }
@@ -89,8 +91,8 @@ body .sectoion-container {
 }
 .intro-inner h1 {
   padding-top: 67px;
-  font-size: 36px;
   font-family: Playfair;
+  font-size: 36px;
   text-align: center;
 }
 .intro-inner .inner-text {
@@ -103,27 +105,24 @@ body .sectoion-container {
 
 .new-collections-container {
   background-color: #E6E3C4;
-  height: 878px;
   padding: 80px 405px;
   color: #000000;
 }
 .new-collections-container .new-collections {
   width: 1110px;
-  height: 758px;
   display: flex;
   justify-content: center;
   border-top: 2px solid #99862A;
   border-bottom: 2px solid #99862A;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
 }
 .new-collections-container .new-collections .portrait .novelty {
-  font-size: 16px;
   font-family: Montserrat;
+  font-size: 16px;
 }
 .new-collections-container .new-collections .portrait .marseille-harvest {
+  font-family: Playfair;
   font-size: 36px;
-  font-family: Playfair Display;
   padding: 30px 0px;
 }
 .new-collections-container .new-collections .portrait .marseille-harvest::after {
@@ -135,8 +134,8 @@ body .sectoion-container {
   display: block;
 }
 .new-collections-container .new-collections .portrait .novelty-text {
-  font-size: 14px;
   font-family: Montserrat;
+  font-size: 14px;
   line-height: 1.5;
   padding: 0px 125px 35px 0px;
 }
@@ -154,8 +153,8 @@ body .sectoion-container {
 .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-year {
   padding: 0 24px;
   align-self: center;
-  font-size: 14px;
   font-family: Montserrat;
+  font-size: 14px;
 }
 .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text {
   padding: 10px 0 15px 30px;
@@ -163,21 +162,21 @@ body .sectoion-container {
   line-height: 1.7;
 }
 .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text .vintage-topic {
+  font-family: Playfair;
   font-size: 18px;
-  font-family: Playfair Display;
 }
 .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text .vintage-text {
-  font-size: 14px;
   font-family: Montserrat;
+  font-size: 14px;
 }
 .new-collections-container .new-collections .portrait .vintages-table .vintage-item:last-child {
   border-bottom: none;
 }
 .new-collections-container .new-collections .portrait .text-after-table {
-  font-size: 14px;
   font-family: Montserrat;
+  font-size: 14px;
   line-height: 1.7;
-  padding: 30px 125px 30px 0px;
+  padding: 30px 120px 30px 0px;
 }
 .new-collections-container .new-collections .portrait .more-details-btn {
   width: 254px;
@@ -229,7 +228,7 @@ body .sectoion-container {
   background-color: #282828;
   margin-top: -28px;
   padding: 0px 20px;
-  font-family: Playfair Display;
+  font-family: Playfair;
   font-size: 36px;
 }
 .registration .registration-inner .registration-img .top-img-2::after {
@@ -249,8 +248,8 @@ body .sectoion-container {
 }
 .registration .registration-container .registration-text {
   margin-top: -70px;
-  font-size: 16px;
   font-family: Montserrat;
+  font-size: 16px;
   line-height: 1.7;
   text-align: center;
 }
@@ -260,8 +259,8 @@ body .sectoion-container {
   justify-content: space-around;
 }
 .registration .registration-container .record-form .form-name-number {
-  font-size: 14px;
   font-family: Montserrat;
+  font-size: 14px;
 }
 .registration .registration-container .record-form .form-name-number .border-for-form::before {
   content: "";
@@ -288,9 +287,9 @@ body .sectoion-container {
   background: #282828;
   color: #ffffff;
   cursor: pointer;
-  font-size: 14px;
   text-transform: uppercase;
   font-family: Montserrat;
+  font-size: 14px;
 }
 .registration .registration-container .sign-up-btn:hover {
   background-color: #233e47;
@@ -307,8 +306,8 @@ body .sectoion-container {
 }
 .footer .footer-navbar-1 {
   width: 1110px;
-  font-size: 14px;
   font-family: Montserrat;
+  font-size: 14px;
   text-transform: uppercase;
   border-top: 1px solid #ffffff;
 }
@@ -324,8 +323,8 @@ body .sectoion-container {
 .footer .footer-navbar-2 {
   display: flex;
   justify-content: center;
-  font-size: 14px;
   font-family: Montserrat;
+  font-size: 14px;
   text-transform: uppercase;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
