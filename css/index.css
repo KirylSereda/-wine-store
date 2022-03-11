@@ -4,13 +4,17 @@ body {
   font-family: sans-serif;
   font-size: 14px;
 }
-body h1, body h2, body h3, body h4, body h6, body p {
+body h1,
+body h2,
+body h3,
+body h4,
+body h6,
+body p {
   margin: 0;
   width: 100%;
 }
 body .sectoion-container {
   width: 100%;
-  background: 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -129,41 +133,39 @@ body .sectoion-container {
   line-height: 1.5;
 }
 
-.new-collections-background {
-  background-color: #E6E3C4;
+.new-collections-container {
   color: #000000;
+  background-color: #E6E3C4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.new-collections-background .new-collections-container {
-  width: 50%;
-}
-.new-collections-background .new-collections-container .new-collections {
+.new-collections-container .new-collections {
+  width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-top: 2px solid #99862A;
-  border-bottom: 2px solid #99862A;
-  padding: 60px 0px;
+  margin: 90px 0px;
+  border-top: 1px solid #998431;
+  border-bottom: 1px solid #998431;
+  padding: 50px 0px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .novelty {
+.new-collections-container .new-collections .portrait .novelty {
   font-family: Montserrat;
   font-size: 16px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .marseille-harvest {
+.new-collections-container .new-collections .portrait .marseille-harvest {
   font-family: Playfair;
   font-size: 36px;
   padding: 30px 0px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .marseille-harvest::after {
+.new-collections-container .new-collections .portrait .marseille-harvest::after {
   content: "";
   height: 2px;
   width: 160px;
@@ -171,13 +173,13 @@ body .sectoion-container {
   background-color: #000000;
   display: block;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .novelty-text {
+.new-collections-container .new-collections .portrait .novelty-text {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 1.5;
   padding: 0px 125px 35px 0px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .vintages-table {
+.new-collections-container .new-collections .portrait .vintages-table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +189,7 @@ body .sectoion-container {
           flex-direction: column;
   padding-right: 125px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .vintages-table .vintage-item {
+.new-collections-container .new-collections .portrait .vintages-table .vintage-item {
   border-bottom: 2px solid #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,7 +199,7 @@ body .sectoion-container {
           align-items: center;
   line-height: 1.5;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-year {
+.new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-year {
   padding: 0 24px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -205,53 +207,62 @@ body .sectoion-container {
   font-family: Montserrat;
   font-size: 14px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text {
+.new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text {
   padding: 10px 0 15px 30px;
   border-left: 2px solid #000000;
-  line-height: 1.7;
+  line-height: 1.4;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text .vintage-topic {
+.new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text .vintage-topic {
   font-family: Playfair;
-  font-size: 18px;
+  font-size: 16px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text .vintage-text {
+.new-collections-container .new-collections .portrait .vintages-table .vintage-item .vintage-topic-text .vintage-text {
   font-family: Montserrat;
   font-size: 14px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .vintages-table .vintage-item:last-child {
+.new-collections-container .new-collections .portrait .vintages-table .vintage-item:last-child {
   border-bottom: none;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .text-after-table {
+.new-collections-container .new-collections .portrait .text-after-table {
   font-family: Montserrat;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.5;
   padding: 30px 120px 30px 0px;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .more-details-btn {
+.new-collections-container .new-collections .portrait .more-details-btn {
   width: 254px;
   height: 60px;
   background: #bba63d;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 16px;
+  font-family: Montserrat;
+  font-size: 18px;
   cursor: pointer;
 }
-.new-collections-background .new-collections-container .new-collections .portrait .more-details-btn:hover {
+.new-collections-container .new-collections .portrait .more-details-btn:hover {
   background-color: #99862A;
   -webkit-transition: opacity 0.1s linear;
   transition: opacity 0.1s linear;
 }
-.new-collections-background .new-collections-container .new-collections .new-collections-imgs {
+.new-collections-container .new-collections .pictures {
+  width: 50%;
+}
+.new-collections-container .new-collections .pictures .big-picture img {
+  width: 100%;
+  height: 100%;
+}
+.new-collections-container .new-collections .pictures .little-pictures {
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.new-collections-background .new-collections-container .new-collections .new-collections-imgs .img-wine-item {
-  border-right: 30px solid #E6E3C4;
-  border-top: 30px solid #E6E3C4;
+.new-collections-container .new-collections .pictures .little-pictures .little-pictures-1 {
+  padding-right: 30px;
 }
 
 .registration {
@@ -272,6 +283,7 @@ body .sectoion-container {
   width: 1100px;
   height: 538px;
   border: 1px solid #ffffff;
+  border-top: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,18 +307,9 @@ body .sectoion-container {
 .registration .registration-inner .registration-img .top-img-2 {
   background-color: #282828;
   margin-top: -28px;
-  padding: 0px 20px;
+  margin-left: 130px;
   font-family: Playfair;
   font-size: 36px;
-}
-.registration .registration-inner .registration-img .top-img-2::after {
-  margin-left: 135px;
-  content: "";
-  height: 2px;
-  width: 118px;
-  margin-top: 50px;
-  background-color: #ffffff;
-  display: block;
 }
 .registration .registration-inner .registration-img .top-img-3 {
   margin: -60px -70px 0 0;
@@ -360,7 +363,7 @@ body .sectoion-container {
   cursor: pointer;
   text-transform: uppercase;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 18px;
 }
 .registration .registration-container .sign-up-btn:hover {
   background-color: #233e47;
