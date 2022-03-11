@@ -23,9 +23,10 @@ body {
 		@include fontz(sans-serif, 14px);
 		h1,h2,h3,h4,h6,p {
 		margin: 0;
+		width: 100%;
 	}
 	.sectoion-container {
-		width: 1920px;
+		width: 100%;
 		background: 50% 50% no-repeat;
 		background-size: cover;
 	}
@@ -119,13 +120,14 @@ body {
 }
 
 //newСollections
-
-.new-collections-container {
+.new-collections-background {
 	background-color: $c_beige;
-	padding: 80px 405px;
 	color: $c_black;
+	@include flex (flex,center);
+	width: 100%;
+.new-collections-container {
+	width: 50%;
 	.new-collections {
-		width: 1110px;
 		@include flex (flex,center);
 		border-top: 2px solid $c_dark-gold;
 		border-bottom: 2px solid $c_dark-gold;
@@ -205,12 +207,14 @@ body {
 			display: flex;
 			flex-wrap: wrap;
 			.img-wine-item {
+				
 				border-right: 30px solid $c_beige;
 				border-top: 30px solid $c_beige;
 				
 			}
 		}	
 	}
+ }
 }
 
 // registration 
